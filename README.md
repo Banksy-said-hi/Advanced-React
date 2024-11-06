@@ -1,4 +1,6 @@
 # Advanced-React
+## What is JSX?
+
 ## Filter( )
 In JavaScript, when using the filter method on an array, the predicate function should return a Boolean value (true or false) for each element.
 
@@ -7,7 +9,9 @@ In JavaScript, when using the filter method on an array, the predicate function 
 
 ```
 const numbers = [5, 12, 8, 130, 44];
+
 const filteredNumbers = numbers.filter((num) => num > 10);
+
 console.log(filteredNumbers); // Output: [12, 130, 44]
 ```
 
