@@ -1,5 +1,5 @@
 # Advanced-React
-## Filter
+## Filter( )
 In JavaScript, when using the filter method on an array, the predicate function should return a Boolean value (true or false) for each element.
 
 - true means the element will be included in the resulting filtered array.
@@ -11,12 +11,12 @@ const filteredNumbers = numbers.filter((num) => num > 10);
 console.log(filteredNumbers); // Output: [12, 130, 44]
 ```
 
-## Sorting
+## Sorting( )
 arrays in JavaScript offer the sort() method, which sorts the elements of an array based on a comparison function provided. The return value from that comparison function determines how the sorting is performed
 
 <img width="988" alt="Screenshot 2024-11-06 at 9 10 53 AM" src="https://github.com/user-attachments/assets/9a69a506-9ffe-43fc-9214-13f0e900bd8f">
 
-## Mapping
+## Mapping( )
 to apply the desired projection and display the information as requested, you can chain the map operator at the end and return a <li> item with the dessert name and its calories.
 
 ```
