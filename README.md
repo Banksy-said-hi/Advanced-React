@@ -24,7 +24,7 @@ Resources:
  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
  - https://react.dev/learn/rendering-lists#rendering-data-from-arrays
  - https://react.dev/learn/rendering-lists#where-to-get-your-key
-   
+ - https://react.dev/blog/2023/03/16/introducing-react-dev
 ```
 const DessertsList = (props) => {
  const lowCaloriesDesserts = props.data
