@@ -20,11 +20,6 @@ arrays in JavaScript offer the sort() method, which sorts the elements of an arr
 
 ## Mapping( )
 to apply the desired projection and display the information as requested, you can chain the map operator at the end and return a <li> item with the dessert name and its calories.
-Resources: 
- - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
- - https://react.dev/learn/rendering-lists#rendering-data-from-arrays
- - https://react.dev/learn/rendering-lists#where-to-get-your-key
- - https://react.dev/blog/2023/03/16/introducing-react-dev
 ```
 const DessertsList = (props) => {
  const lowCaloriesDesserts = props.data
@@ -45,3 +40,12 @@ const DessertsList = (props) => {
 }
 export default DessertsList;
 ```
+## Resources
+ - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+ - https://react.dev/learn/rendering-lists#rendering-data-from-arrays
+ - https://react.dev/learn/rendering-lists#where-to-get-your-key
+ - https://react.dev/blog/2023/03/16/introducing-react-dev
+ - https://legacy.reactjs.org/docs/forms.html
+ - https://formik.org
+ - https://github.com/jquense/yup
+ - https://github.com/react-hook-form/react-hook-form
