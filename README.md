@@ -1,6 +1,4 @@
 # Advanced-React
-## What is JSX?
-
 ## Filter( )
 In JavaScript, when using the filter method on an array, the predicate function should return a Boolean value (true or false) for each element.
 
@@ -22,7 +20,11 @@ arrays in JavaScript offer the sort() method, which sorts the elements of an arr
 
 ## Mapping( )
 to apply the desired projection and display the information as requested, you can chain the map operator at the end and return a <li> item with the dessert name and its calories.
-
+Resources: 
+ - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+ - https://react.dev/learn/rendering-lists#rendering-data-from-arrays
+ - https://react.dev/learn/rendering-lists#where-to-get-your-key
+   
 ```
 const DessertsList = (props) => {
  const lowCaloriesDesserts = props.data
@@ -40,7 +42,6 @@ const DessertsList = (props) => {
      ); 
    }); 
  return <ul>{lowCaloriesDesserts}</ul>; 
-
 }
 export default DessertsList;
 ```
