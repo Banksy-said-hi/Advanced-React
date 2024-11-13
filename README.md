@@ -49,3 +49,6 @@ export default DessertsList;
  - https://formik.org
  - https://github.com/jquense/yup
  - https://github.com/react-hook-form/react-hook-form
+ - https://legacy.reactjs.org/docs/react-api.html#reactmemo
+ - https://legacy.reactjs.org/docs/hooks-reference.html#usememo
+ - 
