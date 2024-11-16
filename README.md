@@ -1,4 +1,4 @@
-# Advanced-React
+# Advanced React
 ## Filter( )
 In JavaScript, when using the filter method on an array, the predicate function should return a Boolean value (true or false) for each element.
 
@@ -51,4 +51,7 @@ export default DessertsList;
  - https://github.com/react-hook-form/react-hook-form
  - https://legacy.reactjs.org/docs/react-api.html#reactmemo
  - https://legacy.reactjs.org/docs/hooks-reference.html#usememo
- - 
+ - Destructuring: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+ - Props: https://react.dev/learn/passing-props-to-a-component#step-2-read-props-inside-the-child-component
+ - useState: https://react.dev/reference/react/useState
+ - useEffect: https://react.dev/reference/react/useEffect
