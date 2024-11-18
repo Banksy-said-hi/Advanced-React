@@ -40,6 +40,17 @@ const DessertsList = (props) => {
 }
 export default DessertsList;
 ```
+
+## React Hooks 
+# Hooks Basic Rules:
+- You should only call hooks from a React component function
+- Only call hooks at the **top level** of a React component function ( outside of loops, conditions, and nested functions )
+- You are allowed to call multiple state or effect hooks inside a component 
+- Make multiple hook calls **in the same sequence**
+
+## Fetch( ), Asynchronous Javascript
+-
+
 ## Resources
  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
  - https://react.dev/learn/rendering-lists#rendering-data-from-arrays
