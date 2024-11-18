@@ -42,13 +42,13 @@ export default DessertsList;
 ```
 
 ## React Hooks 
-# Hooks Basic Rules:
+### Hooks Basic Rules:
 - You should only call hooks from a React component function
 - Only call hooks at the **top level** of a React component function ( outside of loops, conditions, and nested functions )
 - You are allowed to call multiple state or effect hooks inside a component 
 - Make multiple hook calls **in the same sequence**
 
-## Fetch( ), Asynchronous Javascript
+### Fetch( ), Asynchronous Javascript
 -
 
 ## Resources
