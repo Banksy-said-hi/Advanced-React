@@ -43,8 +43,8 @@ export default DessertsList;
 
 ## React Hooks 
 ### Hooks Basic Rules:
-- You should only call hooks from a React component function
-- Only call hooks at the **top level** of a React component function ( outside of loops, conditions, and nested functions )
+- You should only call hooks from a React component function ( You should not call hooks inside loops )
+- Only call hooks at the **top level** of a React component function ( outside of loops, conditions, and nested functions ) ( You should not call hooks inside if statements ) ( You should not call hooks inside nested functions ) ( You can call multiple state hooks and effect hooks inside a component )
 - You are allowed to call multiple state or effect hooks inside a component 
 - Make multiple hook calls **in the same sequence**
 
