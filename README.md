@@ -29,6 +29,18 @@ The returned value from the useRef hook invocation is an object.
 ### Fetch( ), Asynchronous Javascript
 -
 
+### Custom Hooks
+- Name them with “use”
+- Only use hooks inside custom hooks
+- Custom hook should at least use one built in React hook  
+- Custom hooks must also follow these key rules:
+   - Only call hooks at the top level: No hooks inside loops, conditions, or nested functions.
+   - Only call hooks in React functions: This means inside components or other custom hooks.
+- Custom hooks don’t have a render cycle:
+  - Unlike components, custom hooks are just functions.
+  - They don’t return JSX; instead, they return values or functions to be used by a component.
+  
+
 ## Resources
  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
  - https://react.dev/learn/rendering-lists#rendering-data-from-arrays
