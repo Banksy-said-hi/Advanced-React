@@ -59,3 +59,6 @@ The returned value from the useRef hook invocation is an object.
  - Hooks: https://legacy.reactjs.org/docs/hooks-rules.html
  - Promises: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises
  - Async/await: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+ - useReducer: https://react.dev/reference/react/useReducer
+ - useRef: https://react.dev/reference/react/useRef
+ - Custom Hooks: https://react.dev/learn/reusing-logic-with-custom-hooks
