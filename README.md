@@ -47,9 +47,14 @@ The returned value from the useRef hook invocation is an object.
 
 ## React.Clone( )
 This lets you copy and modify an existing React element. It’s like creating a “twin” of an element, but you can change its props or add new ones. **Why use it?** When you need to pass additional props or modify existing ones on a child element without directly changing it.
+### React.cloneElement( )
+The output of React.cloneElement() is a new React element that is a copy of the original element, but with any new or modified props added.
 
 ## React.Children( )
 This is a helper for working with props.children (the stuff you pass inside a component). It helps inspect, modify, or loop through the children elements safely. **Why use it?** When you need to interact with or manipulate child elements, especially when there are multiple.
+### React.Children.map( )
+The output of React.Children.map() is a new array of React elements where each element is the result of applying the callback function to each child.
+
 
 ## Resources
  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
