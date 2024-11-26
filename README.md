@@ -40,6 +40,16 @@ The returned value from the useRef hook invocation is an object.
   - Unlike components, custom hooks are just functions.
   - They don’t return JSX; instead, they return values or functions to be used by a component.
   
+## Children Prop, Component Composition
+- Containment: **What it means?** It’s about passing components inside other components using the children prop. **Why it’s useful?** It allows you to make flexible and reusable components that “contain” other elements or components.
+  
+- Specialization: **What it means?** It’s about creating a specific version of a more general component. **Why it’s useful?** It lets you reuse the base functionality of a component but tailor it for specific use cases.
+
+## React.Clone( )
+This lets you copy and modify an existing React element. It’s like creating a “twin” of an element, but you can change its props or add new ones. **Why use it?** When you need to pass additional props or modify existing ones on a child element without directly changing it.
+
+## React.Children( )
+This is a helper for working with props.children (the stuff you pass inside a component). It helps inspect, modify, or loop through the children elements safely. **Why use it?** When you need to interact with or manipulate child elements, especially when there are multiple.
 
 ## Resources
  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
