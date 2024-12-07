@@ -57,6 +57,12 @@ This is a helper for working with props.children (the stuff you pass inside a co
 The output of React.Children.map() is a new array of React elements where each element is the result of applying the callback function to each child.
 
 
+## Higher Order Component
+
+
+## render Props 
+
+
 ## Resources
  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
  - https://react.dev/learn/rendering-lists#rendering-data-from-arrays
