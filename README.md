@@ -1,3 +1,4 @@
+
 # Advanced React
 ### Filter( )
 In JavaScript, when using the filter method on an array, the predicate function should return a Boolean value (true or false) for each element.
@@ -78,3 +79,6 @@ The output of React.Children.map() is a new array of React elements where each e
  - useRef: https://react.dev/reference/react/useRef
  - Custom Hooks: https://react.dev/learn/reusing-logic-with-custom-hooks
  - Premade Components: https://www.chakra-ui.com/playground
+ - Redux: https://react-redux.js.org/api/connect, https://redux.js.org/api/compose
+ - Loadash: https://lodash.com/docs/4.17.15#flowRight
+ - 
