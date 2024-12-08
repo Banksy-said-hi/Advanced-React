@@ -87,4 +87,7 @@ The output of React.Children.map() is a new array of React elements where each e
  - Premade Components: https://www.chakra-ui.com/playground
  - Redux: https://react-redux.js.org/api/connect, https://redux.js.org/api/compose
  - Loadash: https://lodash.com/docs/4.17.15#flowRight
- - 
+ - Downshift ( automcomplete, combobox, select experience components): https://github.com/downshift-js/downshift
+ - Render Props: https://legacy.reactjs.org/docs/render-props.html
+ - Higher Order Components: https://legacy.reactjs.org/docs/higher-order-components.html
+ - Forwarding refs in higher order components: https://legacy.reactjs.org/docs/forwarding-refs.html#forwarding-refs-in-higher-order-components
