@@ -26,22 +26,73 @@ console.log(affordableAvailableProducts);
 // Output: [{ name: "Keyboard", price: 45, available: true }, { name: "USB Cable", price: 10, available: true }]
 ```
 
+## 🔢 sort( )
+The sort() method rearranges the elements of an array in place based on the return value of a comparison function. Without a comparison function, sort() converts the elements to strings and sorts them in lexicographical order. To achieve numerical or custom sorting, you must provide a comparison function.
 
-
-
-
-In JavaScript, when using the filter method on an array, the predicate function should return a Boolean value (true or false) for each element.
-
-- true means the element will be included in the resulting filtered array.
-- false means the element will be excluded.
-
-### Sorting( )
-arrays in JavaScript offer the sort() method, which sorts the elements of an array based on a comparison function provided. The return value from that comparison function determines how the sorting is performed
+Key Points:
+	•	Mutates the original array: Unlike filter(), it directly modifies the array.
+	•	Customizable: A comparison function allows for tailored sorting logic.
+	•	Default Behavior: Lexicographical sorting when no comparison function is provided.
 
 <img width="988" alt="Screenshot 2024-11-06 at 9 10 53 AM" src="https://github.com/user-attachments/assets/9a69a506-9ffe-43fc-9214-13f0e900bd8f">
 
-### Mapping( )
-to apply the desired projection and display the information as requested, you can chain the map operator at the end and return a <li> item with the dessert name and its calories.
+```
+// Example: Sort products by price in ascending order
+const products = [
+  { name: "Laptop", price: 1200 },
+  { name: "Mouse", price: 20 },
+  { name: "Keyboard", price: 45 },
+  { name: "Monitor", price: 200 },
+  { name: "USB Cable", price: 10 }
+];
+
+// Sort products by price (ascending)
+products.sort((a, b) => a.price - b.price);
+
+console.log(products);
+// Output:
+// [
+//   { name: "USB Cable", price: 10 },
+//   { name: "Mouse", price: 20 },
+//   { name: "Keyboard", price: 45 },
+//   { name: "Monitor", price: 200 },
+//   { name: "Laptop", price: 1200 }
+// ]
+```
+
+## 🔄 Map( )
+The map() method creates a new array by applying a callback function to each element of the original array. It’s often used for transforming data, such as extracting properties, performing calculations, or formatting elements for display. The map() method does not mutate the original array, and the resulting array has the same length as the original.
+
+Key Points:
+	•	Non-mutating: The original array remains unchanged.
+	•	Transforms data: Creates a new array with transformed elements.
+	•	Callback Function: Defines how each element should be transformed.
+
+```
+// Example: Extract product names with their prices as strings
+const products = [
+  { name: "Laptop", price: 1200 },
+  { name: "Mouse", price: 20 },
+  { name: "Keyboard", price: 45 },
+  { name: "Monitor", price: 200 },
+  { name: "USB Cable", price: 10 }
+];
+
+// Use map to create a list of strings
+const productDescriptions = products.map(
+  product => `${product.name}: $${product.price}`
+);
+
+console.log(productDescriptions);
+// Output: 
+// [
+//   "Laptop: $1200",
+//   "Mouse: $20",
+//   "Keyboard: $45",
+//   "Monitor: $200",
+//   "USB Cable: $10"
+// ]
+```
 
 ## React Hooks 
 ### Hooks Basic Rules:
@@ -50,8 +101,42 @@ to apply the desired projection and display the information as requested, you ca
 - You are allowed to call multiple state or effect hooks inside a component 
 - Make multiple hook calls **in the same sequence**
 
-### useReducer( )
-The useReducer hook gets an initial state and a reducer function.  
+### ⚖️ useReducer( )
+The useReducer hook is an alternative to useState for managing state in React components, especially when state logic becomes complex or involves multiple sub-values. It’s based on the reducer pattern, commonly used in Redux. With useReducer, you define a reducer function that specifies how the state should change in response to different actions.
+```
+import React, { useReducer } from "react";
+
+// Step 1: Define the reducer function
+function reducer(state, action) {
+  switch (action.type) {
+    case "increment":
+      return { count: state.count + 1 };
+    case "decrement":
+      return { count: state.count - 1 };
+    case "reset":
+      return { count: 0 };
+    default:
+      return state; // Return current state for unknown actions
+  }
+}
+
+// Step 2: Use the reducer in a component
+function Counter() {
+  const initialState = { count: 0 }; // Initial state
+  const [state, dispatch] = useReducer(reducer, initialState); // useReducer
+
+  return (
+    <div>
+      <p>Count: {state.count}</p>
+      <button onClick={() => dispatch({ type: "increment" })}>Increment</button>
+      <button onClick={() => dispatch({ type: "decrement" })}>Decrement</button>
+      <button onClick={() => dispatch({ type: "reset" })}>Reset</button>
+    </div>
+  );
+}
+
+export default Counter;
+```
 
 ### useRef( )
 The returned value from the useRef hook invocation is an object.  
