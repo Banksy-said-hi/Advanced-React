@@ -1,6 +1,35 @@
+# 🌟 Advanced React
 
-# Advanced React
-### Filter( )
+## 🔍 Filter( )
+The filter() method is used to create a new array containing only the elements that satisfy a specific condition. It does this by executing a callback function on each element of the original array. The callback should return true to include the element in the new array and false to exclude it. This method doesn’t modify the original array and is often used for tasks like removing unwanted items or narrowing down data.
+
+Key Points:
+	•	Non-mutating: It does not change the original array.
+	•	Returns a new array: Contains elements that satisfy the condition.
+	•	Callback Function: The function determines whether each element passes the test.
+`
+// Example: Filter available products that cost less than $50
+const products = [
+  { name: "Laptop", price: 1200, available: true },
+  { name: "Mouse", price: 20, available: false },
+  { name: "Keyboard", price: 45, available: true },
+  { name: "Monitor", price: 200, available: true },
+  { name: "USB Cable", price: 10, available: true }
+];
+
+// Use filter to get affordable and available products
+const affordableAvailableProducts = products.filter(
+  product => product.price < 50 && product.available
+);
+
+console.log(affordableAvailableProducts);
+// Output: [{ name: "Keyboard", price: 45, available: true }, { name: "USB Cable", price: 10, available: true }]
+`
+
+
+
+
+
 In JavaScript, when using the filter method on an array, the predicate function should return a Boolean value (true or false) for each element.
 
 - true means the element will be included in the resulting filtered array.
