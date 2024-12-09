@@ -7,7 +7,7 @@ Key Points:
 	•	Non-mutating: It does not change the original array.
 	•	Returns a new array: Contains elements that satisfy the condition.
 	•	Callback Function: The function determines whether each element passes the test.
-`
+```
 // Example: Filter available products that cost less than $50
 const products = [
   { name: "Laptop", price: 1200, available: true },
@@ -24,7 +24,7 @@ const affordableAvailableProducts = products.filter(
 
 console.log(affordableAvailableProducts);
 // Output: [{ name: "Keyboard", price: 45, available: true }, { name: "USB Cable", price: 10, available: true }]
-`
+```
 
 
 
