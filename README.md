@@ -4,9 +4,9 @@
 The filter() method is used to create a new array containing only the elements that satisfy a specific condition. It does this by executing a callback function on each element of the original array. The callback should return true to include the element in the new array and false to exclude it. This method doesn’t modify the original array and is often used for tasks like removing unwanted items or narrowing down data.
 
 Key Points:
-	•	Non-mutating: It does not change the original array.
-	•	Returns a new array: Contains elements that satisfy the condition.
-	•	Callback Function: The function determines whether each element passes the test.
+	- Non-mutating: It does not change the original array.
+	- Returns a new array: Contains elements that satisfy the condition.
+	- Callback Function: The function determines whether each element passes the test.
 ```
 // Example: Filter available products that cost less than $50
 const products = [
@@ -30,9 +30,9 @@ console.log(affordableAvailableProducts);
 The sort() method rearranges the elements of an array in place based on the return value of a comparison function. Without a comparison function, sort() converts the elements to strings and sorts them in lexicographical order. To achieve numerical or custom sorting, you must provide a comparison function.
 
 Key Points:
-	•	Mutates the original array: Unlike filter(), it directly modifies the array.
-	•	Customizable: A comparison function allows for tailored sorting logic.
-	•	Default Behavior: Lexicographical sorting when no comparison function is provided.
+	- Mutates the original array: Unlike filter(), it directly modifies the array.
+	- Customizable: A comparison function allows for tailored sorting logic.
+	- Default Behavior: Lexicographical sorting when no comparison function is provided.
 
 <img width="988" alt="Screenshot 2024-11-06 at 9 10 53 AM" src="https://github.com/user-attachments/assets/9a69a506-9ffe-43fc-9214-13f0e900bd8f">
 
@@ -64,9 +64,9 @@ console.log(products);
 The map() method creates a new array by applying a callback function to each element of the original array. It’s often used for transforming data, such as extracting properties, performing calculations, or formatting elements for display. The map() method does not mutate the original array, and the resulting array has the same length as the original.
 
 Key Points:
-	•	Non-mutating: The original array remains unchanged.
-	•	Transforms data: Creates a new array with transformed elements.
-	•	Callback Function: Defines how each element should be transformed.
+	- Non-mutating: The original array remains unchanged.
+	- Transforms data: Creates a new array with transformed elements.
+	- Callback Function: Defines how each element should be transformed.
 
 ```
 // Example: Extract product names with their prices as strings
