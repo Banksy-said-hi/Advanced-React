@@ -60,13 +60,19 @@ The output of React.Children.map() is a new array of React elements where each e
 ## Containment 
 
 
-## Speiclization
+## Specialization
 
 
 ## Higher Order Component
 
 
 ## render Props 
+
+
+## React Testing Library 
+
+
+## Jest 
 
 
 ## Resources
