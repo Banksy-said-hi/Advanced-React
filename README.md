@@ -223,3 +223,4 @@ The output of React.Children.map() is a new array of React elements where each e
  - Render Props: https://legacy.reactjs.org/docs/render-props.html
  - Higher Order Components: https://legacy.reactjs.org/docs/higher-order-components.html
  - Forwarding refs in higher order components: https://legacy.reactjs.org/docs/forwarding-refs.html#forwarding-refs-in-higher-order-components
+ - Testing: https://testing-library.com/docs/dom-testing-library/api-events
