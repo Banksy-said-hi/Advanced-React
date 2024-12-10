@@ -1,5 +1,13 @@
 # 🌟 Advanced React
+## React Element 
+A React Element is a plain JavaScript object that represents the structure of a UI component. It’s the building block of React applications. A React Component is different from a React Element. A React Component is a function or class that returns React elements. It is more like a blueprint for what React elements should look like. A React Element is the output of JSX or the result of calling a React Component.
+- React Components are the reusable building blocks (functions or classes) that generate React Elements.
 
+- React Elements are the actual JavaScript objects that describe how the DOM should look.
+
+- Descriptive Objects: They describe what you want to see on the screen, but they are not the actual DOM nodes.
+
+- Immutable: Once created, you cannot modify a React Element.
 ## 🔍 Filter( )
 The filter() method is used to create a new array containing only the elements that satisfy a specific condition. It does this by executing a callback function on each element of the original array. The callback should return true to include the element in the new array and false to exclude it. This method doesn’t modify the original array and is often used for tasks like removing unwanted items or narrowing down data.
 
@@ -432,6 +440,7 @@ export default ButtonList;
 
 ## 🔄 React.Children.map( ) 
 In React, the React.Children.map() method is a utility provided to safely and efficiently iterate over the children prop. It allows you to traverse the children of a component, apply transformations, and return a new set of modified children. This is particularly useful when dealing with dynamic or unknown children in a component.
+**In React, props are immutable. You’re not allowed to directly modify child.props because it mutates the original child element, which goes against React’s principle of immutability.**
 ```
 React.Children.map(children, function(child[, index]) { ... });
 // children: The children prop you want to iterate over.
@@ -480,7 +489,7 @@ export default App;
 
 
 ## React Testing Library 
-
+The screen utility in React Testing Library is a global object that provides access to the DOM rendered during a test. When you use React Testing Library to render a component, the component and its children are rendered into a real DOM tree (in a virtual browser environment like JSDOM), and screen lets you query this DOM.
 
 ## Jest 
 
