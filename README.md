@@ -523,3 +523,7 @@ The screen utility in React Testing Library is a global object that provides acc
  - Higher Order Components: https://legacy.reactjs.org/docs/higher-order-components.html
  - Forwarding refs in higher order components: https://legacy.reactjs.org/docs/forwarding-refs.html#forwarding-refs-in-higher-order-components
  - Testing: https://testing-library.com/docs/dom-testing-library/api-events
+ - React Testing Library: https://testing-library.com/docs/react-testing-library/intro/
+ - CI / CD: https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment
+ - Practical Test Pyramid: https://martinfowler.com/articles/practical-test-pyramid.html
+ - Jest: https://jestjs.io/docs/getting-started
