@@ -1,6 +1,6 @@
 # 🌟 Advanced React
 
-### 🔍 Filter( )
+## 🔍 Filter( )
 The filter() method is used to create a new array containing only the elements that satisfy a specific condition. It does this by executing a callback function on each element of the original array. The callback should return true to include the element in the new array and false to exclude it. This method doesn’t modify the original array and is often used for tasks like removing unwanted items or narrowing down data.
 
 Key Points:
@@ -28,7 +28,7 @@ console.log(affordableAvailableProducts);
 // Output: [{ name: "Keyboard", price: 45, available: true }, { name: "USB Cable", price: 10, available: true }]
 ```
 
-### 🔢 sort( )
+## 🔢 sort( )
 The sort() method rearranges the elements of an array in place based on the return value of a comparison function. Without a comparison function, sort() converts the elements to strings and sorts them in lexicographical order. To achieve numerical or custom sorting, you must provide a comparison function.
 
 Key Points:
@@ -64,7 +64,7 @@ console.log(products);
 // ]
 ```
 
-### 🔄 Map( )
+## 🔄 Map( )
 The map() method creates a new array by applying a callback function to each element of the original array. It’s often used for transforming data, such as extracting properties, performing calculations, or formatting elements for display. The map() method does not mutate the original array, and the resulting array has the same length as the original.
 
 Key Points:
@@ -100,7 +100,7 @@ console.log(productDescriptions);
 // ]
 ```
 
-### React Hooks:
+## React Hooks:
 - You should only call hooks from a React component function ( You should not call hooks inside loops )
 
 - Only call hooks at the **top level** of a React component function ( outside of loops, conditions, and nested functions ) ( You should not call hooks inside if statements ) ( You should not call hooks inside nested functions ) ( You can call multiple state hooks and effect hooks inside a component )
@@ -109,7 +109,7 @@ console.log(productDescriptions);
 
 - Make multiple hook calls **in the same sequence**
 
-### ⚖️ useReducer( )
+## ⚖️ useReducer( )
 The useReducer hook is an alternative to useState for managing state in React components, especially when state logic becomes complex or involves multiple sub-values. It’s based on the reducer pattern, commonly used in Redux. With useReducer, you define a reducer function that specifies how the state should change in response to different actions.
 ```
 import React, { useReducer } from "react";
@@ -146,7 +146,7 @@ function Counter() {
 export default Counter;
 ```
 
-### 📌 useRef( )
+## 📌 useRef( )
 The useRef hook is a versatile tool in React used to maintain a persistent reference to a value or a DOM element across renders, without causing re-renders when the value changes. It is especially useful for scenarios where you need to:
 
 - Access or modify DOM elements directly.
@@ -204,7 +204,7 @@ function RenderCounter() {
 export default RenderCounter;
 ```
 
-### 🌐 Fetch( ), Asynchronous Javascript
+## 🌐 Fetch( ), Asynchronous Javascript
 The fetch() function is a JavaScript method used to make network requests, such as fetching data from a server. It works seamlessly in React for retrieving data from REST APIs or other endpoints. Since network requests are asynchronous, you often combine fetch() with JavaScript tools like Promises or async/await for better control.
 
 In React, we typically use fetch() inside a lifecycle hook like useEffect to ensure that data fetching happens during specific component life cycles.
@@ -216,7 +216,7 @@ Key Points:
 
 - Common Use in React: Combine fetch() with useEffect to load data when the component mounts.
 
-### 🛠 Custom Hooks
+## 🛠 Custom Hooks
 Custom hooks are user-defined functions that allow you to encapsulate reusable logic in React. They follow the same rules as built-in hooks and are a great way to share logic between components without duplicating code or relying on higher-order components (HOCs) or render props.
 
 Why Use Custom Hooks?
@@ -235,15 +235,18 @@ Key Points About Custom Hooks:
 
 - Follow React’s Rules: Custom hooks follow the same rules as other hooks (e.g., call them only at the top level, never inside loops or conditions).
 
-### 🧩 Containment Design Pattern
+## 🧩 Containment Design Pattern
 Containment in React refers to a design pattern where components act as wrappers for other elements or components. It’s especially useful when you need a parent component to render unknown or dynamic children passed to it.
 
 Instead of hardcoding child components, you allow them to be passed in via the children prop, making your components more flexible and reusable.
 
 Why Use Containment?
-	1.	Flexibility: Allows a parent component to wrap dynamic content without knowing its structure beforehand.
-	2.	Reusability: Makes components adaptable to a variety of use cases by simply passing different children.
-	3.	Clean Code: Decouples the parent’s layout/logic from the child’s content.
+
+- Flexibility: Allows a parent component to wrap dynamic content without knowing its structure beforehand.
+
+- Reusability: Makes components adaptable to a variety of use cases by simply passing different children.
+
+- Clean Code: Decouples the parent’s layout/logic from the child’s content.
  
 ```
 function Card({ children }) {
@@ -291,7 +294,7 @@ function App() {
 }
 ```
 
-### 🎨 Specialization Design Pattern
+## 🎨 Specialization Design Pattern
 Specialization is a React pattern where you create specialized versions of a general or base component to handle more specific tasks or scenarios. It allows you to reuse the core functionality of a general component while customizing its behavior or appearance for a particular use case.
 
 Why Use Specialization?
@@ -427,7 +430,7 @@ function ButtonList() {
 export default ButtonList;
 ```
 
-### 🔄 React.Children.map( ) 
+## 🔄 React.Children.map( ) 
 In React, the React.Children.map() method is a utility provided to safely and efficiently iterate over the children prop. It allows you to traverse the children of a component, apply transformations, and return a new set of modified children. This is particularly useful when dealing with dynamic or unknown children in a component.
 ```
 React.Children.map(children, function(child[, index]) { ... });
