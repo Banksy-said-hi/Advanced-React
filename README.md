@@ -527,3 +527,6 @@ The screen utility in React Testing Library is a global object that provides acc
  - CI / CD: https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment
  - Practical Test Pyramid: https://martinfowler.com/articles/practical-test-pyramid.html
  - Jest: https://jestjs.io/docs/getting-started
+ - ChakraUI: https://www.chakra-ui.com/docs/components/concepts/overview
+ - Formik ( to create forms ): https://formik.org/docs/overview
+ - Yup ( complement to Formik for validation ): https://github.com/jquense/yup
