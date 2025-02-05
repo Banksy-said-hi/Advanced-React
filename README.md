@@ -499,12 +499,14 @@ The screen utility in React Testing Library is a global object that provides acc
 - how to implement code splitting in Reacp apps and why?
 
 ## To read more:
-- Bundle, Websocket, Markup, Javascript promises, Callback, 
+- Bundle, Websocket, Markup, Javascript promises, Callback, useDebouncer
+- What is the proper way of designing a useEffect? do we really have to define the function inside?
 
 ## To create code sample:
 - Lazy loading, Suspense, React code splitting
 - Redux: you can create a dark mode toggler to practice
-- 
+
+  
 
 ## Resources
  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
